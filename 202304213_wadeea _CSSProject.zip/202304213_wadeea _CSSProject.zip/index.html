@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the best library services at Chapters of Desire. A vast collection of books and resources for everyone.">
+    <title>Chapters of Desire | Online Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
+
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .correct { color: green; }
+        .wrong { color: red; }
+        .feedback { margin-top: 10px; }
+        .quiz-container { margin-bottom: 20px; }
+        h2 { color: #333; }
+      </style>
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button onclick="toggleLanguage('en')">English</button>
+        <button onclick="toggleLanguage('ar')">Arabic</button>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <img src="images/logo.png" alt="Library Logo - Chapters of Desire" class="logo">
+        <h1>Chapters of Desire</h1>
+    </header>
+    
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Library Services</a></li>
+            <li><a href="#library quiz">Library Quiz</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+<!-- About Section -->
+<section id="about" class="about-section" data-lang="en">
+    <section class="about-overlay-section">
+        <!-- Fixed video element -->
+        <video autoplay muted loop playsinline class="background-video">
+          <source src="video/book.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <!-- Overlay content -->
+        <div class="about-overlay-content">
+            <h1>Welcome to Our Library</h1>
+            <p>
+                At <strong>Chapters of Desire</strong>, we take you on a journey through stories, knowledge, and imagination. Discover, dream, and learn in the heart of our library.
+            </p>
+        </div>
+    </section>
+    <p>Our mission is simple: to inspire, educate, and foster a love of reading. We provide access to a wide variety of books, from timeless classics to contemporary works, as well as digital resources and e-books to meet the needs of every reader. Our library is a place where everyone, regardless of background or age, can find something that sparks curiosity and deepens understanding.</p>
+    <h3>Our Values:</h3>
+
+
+    <ul>
+        <li><strong>Inclusivity:</strong> We believe that knowledge should be accessible to everyone. Our library offers a welcoming environment where all are invited to explore, learn, and grow.</li>
+        <li><strong>Community:</strong> Chapters of Desire is more than just a collection of books—it’s a space for people to connect, share ideas, and engage with one another. We host events, workshops, and discussions to enrich the experience of our visitors.</li>
+        <li><strong>Education:</strong> We aim to empower people through learning. From the youngest reader to the most experienced scholar, we provide resources that inspire intellectual growth and curiosity.</li>
+        <li><strong>Passion:</strong> We are passionate about books and their ability to transform lives. Every book we offer is chosen with care to provide the best reading experience and to stimulate minds.</li>
+    </ul>
+    <p>At Chapters of Desire, we’re not just creating a library; we’re cultivating a lifelong love of reading. Join us in this journey to explore new chapters of your life, one page at a time.</p>
+
+    <!-- Audio element -->
+    <audio controls>
+        <source src="audio/audio.mp4" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</section>
+
+    <!-- Arabic About Section -->
+    <section id="about" class="about-section" data-lang="ar" style="display:none;">
+        <div class="video-container">
+            <video controls width="300">
+                <source src="video/books video.mp4" type="video/mp4">
+                متصفحك لا يدعم هذه الميزة.
+            </video>
+        </div>
+        <div class="welcome-text">
+            <h2>مرحبًا بك في مكتبتنا</h2>
+            <p>مرحبًا بك في <strong>فصول الرغبة</strong>، بوابتك الأنيقة إلى عالم الكتب. استكشف، احلم، وتعلم.</p>
+            <audio controls>
+                <source src="audio/audio.mp4" type="audio/mpeg">
+                متصفحك لا يدعم هذه الميزة.
+            </audio>
+        </div>
+    </section>
+
+ <!-- Library Services Section -->
+<section id="services">
+    <h2>Library Services</h2>
+    
+    <div class="service-box">
+        <i class="fas fa-book"></i>
+        <h3>Books & E-books</h3>
+        <p>Our library holds an extensive collection of both physical books and e-books spanning numerous genres. Whether you're interested in fiction, non-fiction, academic books, or niche topics, we have something for everyone. With our e-book lending program, you can download digital books directly to your device and enjoy reading anytime, anywhere.</p>
+    </div>
+    
+    <div class="service-box">
+        <i class="fas fa-users"></i>
+        <h3>Library Membership</h3>
+        <p>Join the library to unlock access to thousands of books, e-books, audiobooks, and exclusive resources. Membership comes with various benefits, including access to special events, priority booking for workshops, and discounts on library products. Members also receive access to online databases and educational platforms that cater to both academic and personal interests.</p>
+    </div>
+    
+    <div class="service-box">
+        <i class="fas fa-calendar-alt"></i>
+        <h3>Events & Workshops</h3>
+        <p>Our library regularly organizes a diverse range of events and workshops for all age groups and interests. Participate in author readings, book clubs, creative writing workshops, public speaking events, and educational seminars. These events encourage social interaction, learning, and intellectual growth in a welcoming, community-focused environment.</p>
+    </div>
+
+    <div class="service-box">
+        <i class="fas fa-search"></i>
+        <h3>Research Assistance & Academic Support</h3>
+        <p>We provide expert research support to help you with academic studies, professional projects, and personal research. Our knowledgeable librarians offer personalized consultations to help you navigate our collection, including finding scholarly articles, historical documents, research papers, and other materials. Whether you're working on a thesis, writing an essay, or learning a new topic, we have the resources and expertise to assist you.</p>
+    </div>
+    
+    <div class="service-box">
+        <i class="fas fa-computer"></i>
+        <h3>Online Resources & Databases</h3>
+        <p>We offer members access to a wide range of online databases, journals, and digital archives. These resources are perfect for students, researchers, and lifelong learners who need reliable information for academic or personal growth. Whether you're looking for academic papers, historical documents, or digital learning tools, our library provides access to essential resources that support your learning goals.</p>
+    </div>
+    
+    <div class="service-box">
+        <i class="fas fa-headphones"></i>
+        <h3>Audiobooks & Podcasts</h3>
+        <p>For those who prefer to listen rather than read, our library offers an extensive selection of audiobooks across different genres. Whether you're commuting, exercising, or relaxing at home, you can enjoy literary works, self-help books, or educational podcasts. We regularly update our collection to include new releases, so there's always something fresh for our audiobook lovers.</p>
+    </div>
+
+    <div class="service-box">
+        <i class="fas fa-print"></i>
+        <h3>Printing, Copying & Scanning</h3>
+        <p>Our library provides state-of-the-art printing, copying, and scanning services for your convenience. Whether you need to print research papers, scan important documents, or make copies of library resources, our facilities are available to all members. We also offer affordable pricing for printing and copying services to suit both personal and academic needs.</p>
+    </div>
+
+    <div class="service-box">
+        <i class="fas fa-laptop"></i>
+        <h3>Computer & Internet Access</h3>
+        <p>We provide free access to computers and high-speed internet for library members. If you need to complete schoolwork, research, or explore the web, our computer stations are equipped with the latest software and tools. Our free Wi-Fi service also allows you to bring in your own device and work in a comfortable, quiet environment.</p>
+    </div>
+    
+    <div class="service-box">
+        <i class="fas fa-child"></i>
+        <h3>Children's Programs & Storytime</h3>
+        <p>Our library is dedicated to fostering a love of reading in children. We offer a variety of children's programs, including weekly storytime sessions, interactive workshops, and educational games. Our programs aim to engage young minds and support their literacy development from an early age. We also host special events such as themed reading hours and family-friendly activities throughout the year.</p>
+    </div>
+
+    <div class="service-box">
+        <i class="fas fa-gift"></i>
+        <h3>Gift Shop & Donations</h3>
+        <p>Browse our library's gift shop for unique literary-themed items such as bookmarks, tote bags, stationery, and more. All proceeds from the gift shop help support library programs and community outreach. We also accept book donations, which are added to our collection or sold to raise funds for new acquisitions and special initiatives.</p>
+    </div>
+
+    <div class="service-box">
+        <i class="fas fa-wheelchair"></i>
+        <h3>Accessibility Services</h3>
+        <p>We are committed to making our library accessible to everyone. We offer a range of services designed to support individuals with disabilities, including accessible reading materials, braille books, audiobooks, and assistive technology for those with visual or mobility impairments. Our library staff is trained to assist visitors with specific accessibility needs.</p>
+    </div>
+
+    <div class="service-box">
+        <i class="fas fa-video"></i>
+        <h3>Media & Film Collection</h3>
+        <p>In addition to books, we have an extensive collection of films, documentaries, and educational videos available for borrowing. Whether you're a film buff, a history enthusiast, or a student looking for educational videos, we offer a variety of media formats for entertainment and learning. You can also watch films in our designated viewing rooms or borrow them for home use.</p>
+    </div>
+
+    <div class="service-box">
+        <i class="fas fa-globe"></i>
+        <h3>International Collection</h3>
+        <p>Our library proudly offers a diverse range of books in multiple languages to serve our global community. Whether you're looking for international literature, cultural resources, or language learning materials, our international collection is designed to cater to readers from all walks of life and from various linguistic backgrounds.</p>
+    </div>
+    
+    <div class="service-box">
+        <i class="fas fa-cogs"></i>
+        <h3>DIY & Maker Space</h3>
+        <p>Our library offers a dedicated space for creativity and innovation, known as our Maker Space. Here, you can use a variety of tools and equipment, including 3D printers, sewing machines, and craft supplies, to work on personal projects, hobbies, or community-based initiatives. We also host classes and workshops that teach new skills in technology, arts, and design.</p>
+    </div>
+
+</section>
+    <body>
+        <h2>📚 Library Quiz</h2>
+
+        <form id="quizForm">
+          <div class="quiz-container">
+            <p>1. What was the name of the ancient library that was considered the greatest library of antiquity?</p>
+            <label><input type="radio" name="q1" value="a"> Library of Alexandria</label><br>
+            <label><input type="radio" name="q1" value="b"> Library of Congress</label><br>
+            <label><input type="radio" name="q1" value="c"> British Library</label><br>
+          </div>
+      
+          <div class="quiz-container">
+            <p>2. Who wrote "One Hundred Years of Solitude"?</p>
+            <label><input type="radio" name="q2" value="a"> Gabriel García Márquez</label><br>
+            <label><input type="radio" name="q2" value="b"> Isabel Allende</label><br>
+            <label><input type="radio" name="q2" value="c"> Mario Vargas Llosa</label><br>
+          </div>
+      
+          <br>
+          <button type="submit">Submit</button>
+        </form>
+      
+        <div id="result" class="feedback"></div>
+      
+        <script>
+          // Correct answers
+          const correctAnswers = {
+            q1: "a", // Library of Alexandria
+            q2: "a"  // Gabriel García Márquez
+          };
+      
+          // Event listener for the form submission
+          document.getElementById("quizForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // prevent page reload
+      
+            let score = 0;
+            let total = Object.keys(correctAnswers).length;
+            let resultText = "";
+      
+            // Loop through each question and check the answers
+            for (let question in correctAnswers) {
+              let selected = document.querySelector(`input[name="${question}"]:checked`);
+              if (selected) {
+                if (selected.value === correctAnswers[question]) {
+                  score++;
+                  resultText += `<p class="correct">✅ Question ${question[1]}: Correct!</p>`;
+                } else {
+                  resultText += `<p class="wrong">❌ Question ${question[1]}: Wrong. The correct answer was '${correctAnswers[question].toUpperCase()}'</p>`;
+                }
+              } else {
+                resultText += `<p class="wrong">⚠️ Question ${question[1]}: No answer selected.</p>`;
+              }
+            }
+      
+            // Display final score
+            resultText += `<p><strong>Final Score: ${score} / ${total}</strong></p>`;
+            document.getElementById("result").innerHTML = resultText;
+          });
+        </script>
+      
+<!-- Contact Form -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit">Submit</button>
+        <p id="error-message"></p>
+        <p id="success-message"></p>
+    </form>
+</section>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Chapters of Desire. All rights reserved.</p>
+    </footer>
+</body>
+</html>
