@@ -1,0 +1,244 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap');
+
+/* Base Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #825835cc; /* Warm, elegant beige */
+  margin: 0;
+  padding: 0;
+  color: #6B4F3B; /* Deep cocoa brown */
+  scroll-behavior: smooth;
+}
+
+/* Header Styles */
+header {
+  background-color: #8B5E3B;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+/* Navigation Bar Styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  background-color: #8B5E3B;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  text-shadow: 0 0 10px #D2A679, 0 0 20px #D2A679;
+}
+
+/* Section Styling */
+section {
+  padding: 30px;
+  margin: 20px;
+}
+
+/* === About Section with Video Background === */
+.about-overlay-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    font-family: 'Georgia', serif;
+}
+
+/* === Video Styling === */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(75%) contrast(115%);
+    opacity: 0.8;
+}
+
+/* === Overlay Content === */
+.about-overlay-content {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(30, 20, 15, 0.75); /* Darker, more contrast */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    color: #f8f1ea;
+    max-width: 960px;
+    width: 100%;
+}
+
+
+.about-overlay-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #fff9f3;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.about-overlay-content p {
+  font-size: 1.25rem;
+  line-height: 2;
+  color: #f7eee7;
+}
+
+/* === Library Services Section === */
+#services {
+  background-color: #f8f1e7;
+  padding: 50px 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 1200px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(50px);
+  animation: fadeInUp 1s forwards;
+}
+
+#services h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #6f4f37;
+  margin-bottom: 40px;
+}
+
+.service-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-box i {
+  font-size: 40px;
+  color: #6f4f37;
+  margin-right: 20px;
+}
+
+.service-box h3 {
+  font-size: 1.8rem;
+  color: #6f4f37;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  max-width: 85%;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+figure {
+    break-inside: avoid;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Paragraph Styling */
+  p::first-letter {
+    font-size: 2em;
+    color: #A7C7E7; /* Elegant blue */
+  }
+  
+  /* Form Styles */
+  input, button, textarea {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  button {
+    background-color: #8B5E3B;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #A9745E;
+  }
+  
+  
+/* Footer Styles */
+footer {
+    background-color: #8B5E3B;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .contact-info a {
+    color: #6B4F3B;
+    font-weight: bold;
+    text-decoration: underline;
+  }
